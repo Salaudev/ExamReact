@@ -1,0 +1,46 @@
+.img-actions {
+    position: relative;
+    border-radius: 5px;
+    overflow: hidden;
+
+filter: drop-shadow(0px 6px 20px rgba(0, 0, 0, 0.06));
+
+
+    .actions {
+        position: absolute;
+        bottom: 10%;
+        left: 0;
+        width: 100%;
+        display: flex;
+        gap: 15px;
+        font-size: 22px;
+        display: none;
+        transition: 0.5s;
+
+        .delete {
+            fill: #FF5B5B;
+            color: #FF5B5B !important;
+        }
+
+        path {
+            &:nth-child(1) {
+                fill: #F6FF8D;
+            }
+        }
+
+
+    }
+
+    &:hover .actions {
+        display: block;
+    }
+}
+
+.content {
+    .price {
+        color: rgba(40, 42, 48, 0.3);
+        font-size: 22px;
+        line-height: 27px;
+        font-weight: 300;
+    }
+}
